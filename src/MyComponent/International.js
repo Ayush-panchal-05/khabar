@@ -58,7 +58,7 @@ const International = () => {
               <Blueprint title={articles.title} url={articles.url}  description={articles.description} urltoimage={articles.urlToImage}/>
             </div>
           ))}
-          <div className='containerm my-5' style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div className='container my-5' style={{ display: 'flex', justifyContent: 'space-between' }}>
            <button className='btn btn-primary'  onClick={Previous} disabled={page==1}>Previous</button>
            <button className='btn btn-primary' onClick={Next}>Next</button>
           </div>
