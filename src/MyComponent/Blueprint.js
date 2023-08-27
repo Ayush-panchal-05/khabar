@@ -8,7 +8,7 @@ const Blueprint = (props) => {
             <div className="card-body">
                 <h5 className="card-title">{props.title==null?'':props.title.slice(0,52)}</h5>
                 <p className="card-text">{props.description==null?'...':props.description.slice(0,57)}</p>
-                <a href={props.url} className="btn btn-primary">Read More</a>
+                <a href={props.url} target='_blank' className="btn btn-primary">Read More</a>
             </div>
         </div>
        </>
