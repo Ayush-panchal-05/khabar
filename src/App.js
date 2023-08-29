@@ -5,13 +5,11 @@ import Home from './MyComponent/Home';
 import International from './MyComponent/International';
 import Navbar from './MyComponent/Navbar';
 import React  from 'react'
-import Spinner from './MyComponent/Spinner';
 import {BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <>
-    {/* <Spinner/> */}
+    <div >
      <Router>
         <Navbar />
          <Routes>
@@ -22,7 +20,7 @@ function App() {
           <Route  path="/Health" element={<Health/>} />
           </Routes>
       </Router>
-    </>
+    </div>
 
   );
 }

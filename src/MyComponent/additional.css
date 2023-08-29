@@ -1,0 +1,19 @@
+.btn-hover{
+    background: #3157ff;
+    width :80px ;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 40px;
+    color: white;
+    text-align: center;
+    border: none;
+
+
+    
+}
+.btn-hover:hover{
+     background-color: rgb(131, 6, 240);
+     border: none;
+     text-align: center;
+     box-shadow: 3px 4px lightgray;
+}

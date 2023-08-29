@@ -45,11 +45,13 @@ const Business = () => {
   
     setCount(count-1) ;
     fetchData() ;
+    window.scrollTo(0, 0);
   }
  
  const Next=()=>{
   setCount(count+1) ;
   fetchData() ;
+  window.scrollTo(0, 0);
  }
   return (
     <div className='container'>
@@ -62,8 +64,8 @@ const Business = () => {
         ))
         }
         <div className='container my-5' style={{display:'flex' , justifyContent:'space-between'}}>
-          <button className='btn btn-primary' onClick={previous} disabled={count<=1} >Previous</button>
-          <button className='btn btn-primary' onClick={Next} disabled={count>=Math.ceil(v/12)}>Next</button>
+          <button className='btn-hover' onClick={previous} disabled={count<=1} >Previous</button>
+          <button className='btn-hover' onClick={Next} disabled={count>=Math.ceil(v/12)}>Next</button>
         </div>
 
       </div>

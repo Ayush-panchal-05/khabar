@@ -43,10 +43,12 @@ const Home = () => {
   const Privious=()=>{
     setPage(page-1) ;
     fetchNews() ;
+    window.scrollTo(0, 0);
   }
   const Next=()=>{
     setPage(page+1) ;
     fetchNews() ;
+    window.scrollTo(0, 0);
   }
   return (
     <div className='container'>
@@ -60,8 +62,8 @@ const Home = () => {
         ))
         }
         <div className='conatiner my-5' style={({display:'flex',justifyContent:'space-between'})}>
-           <button className='btn btn-primary' onClick={Privious} disabled={page==1}> Previous</button>
-           <button className='btn btn-primary' onClick={Next} disabled={page>=Math.ceil(v/12)}>Next</button>
+           <button className='btn-hover' onClick={Privious} disabled={page==1}> Previous</button>
+           <button className='btn-hover' onClick={Next} disabled={page>=Math.ceil(v/12)}>Next</button>
         </div>
       </div>
        

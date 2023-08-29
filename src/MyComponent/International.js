@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from "axios";
 import Blueprint from './Blueprint';
 import Spinner from './Spinner';
+import additional from './additional.css';
 
 const International = () => {
 
@@ -49,11 +50,13 @@ const International = () => {
   const Next=()=>{
      setPage(page+1) ;
      fetchData() ;
+     window.scrollTo(0, 0);
   }
   const Previous=()=>{
    
       setPage(page-1) ;
       fetchData() ;
+      window.scrollTo(0, 0);
   
   }
 
@@ -67,8 +70,8 @@ const International = () => {
             </div>
           ))}
           <div className='container my-5' style={{ display: 'flex', justifyContent: 'space-between' }}>
-           <button className='btn btn-primary'  onClick={Previous} disabled={page==1}>Previous</button>
-           <button className='btn btn-primary' onClick={Next} disabled={page>=Math.ceil(v/12)}>Next</button>
+           <button className='btn-hover'  onClick={Previous} disabled={page==1}>Previous</button>
+           <button className='btn-hover' onClick={Next} disabled={page>=Math.ceil(v/12)}  >Next</button>
           </div>
           </div>
       
